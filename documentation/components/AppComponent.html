@@ -1,0 +1,687 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>to-do-list documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">to-do-list documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  AppComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/app.component.ts</code>
+</p>
+
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-root</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./app.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./app.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#groupsList" >groupsList</a>
+                            </li>
+                            <li>
+                                <a href="#panelOpenState" >panelOpenState</a>
+                            </li>
+                            <li>
+                                <a href="#title" >title</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#todoSer" >todoSer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(todoSer: <a href="../injectables/TodoService.html" target="_self">TodoService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/app.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>todoSer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TodoService.html" target="_self" >TodoService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="groupsList"></a>
+                    <span class="name">
+                        <span ><b>groupsList</b></span>
+                        <a href="#groupsList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/app.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="panelOpenState"></a>
+                    <span class="name">
+                        <span ><b>panelOpenState</b></span>
+                        <a href="#panelOpenState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/app.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="title"></a>
+                    <span class="name">
+                        <span ><b>title</b></span>
+                        <a href="#title"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;ToDo-List&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="todoSer"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>todoSer</b></span>
+                        <a href="#todoSer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/TodoService.html" target="_self" >TodoService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/app.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { TodoService } from &#x27;./services/todo.service&#x27;;
+import { Component } from &#x27;@angular/core&#x27;;
+
+
+
+@Component({
+  selector: &#x27;app-root&#x27;,
+  templateUrl: &#x27;./app.component.html&#x27;,
+  styleUrls: [&#x27;./app.component.scss&#x27;]
+})
+export class AppComponent {
+  panelOpenState &#x3D; false;
+  title &#x3D; &#x27;ToDo-List&#x27;;
+  groupsList:any[] &#x3D; [];
+  constructor(public todoSer:TodoService) {
+    this.groupsList &#x3D; this.todoSer.groupData;
+
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- Side Menue --&gt;
+&lt;mat-sidenav-container&gt;
+  &lt;mat-sidenav #sideMenu opened mode&#x3D;&quot;side&quot;&gt;
+    &lt;mat-toolbar&gt;&lt;/mat-toolbar&gt;
+    &lt;div class&#x3D;&quot;sideAvatar&quot;&gt;
+      &lt;img src&#x3D;&quot;../../assets/sideAvatar.png&quot; alt&#x3D;&quot;avatart&quot; title&#x3D;&quot;avatar&quot; /&gt;
+      &lt;strong class&#x3D;&quot;avatarName&quot;&gt;Moustafa Elkady&lt;/strong&gt;
+      &lt;i class&#x3D;&quot;fas fa-sort-down&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;menue&quot;&gt;
+      &lt;mat-list&gt;
+        &lt;mat-list-item routerLink&#x3D;&quot;/taskslist&quot; routerLinkActive&#x3D;&quot;activeSideLink&quot; [routerLinkActiveOptions]&#x3D;&quot;{exact:
+          true}&quot;&gt;
+          &lt;i class&#x3D;&quot;fas fa-home homeIcon&quot;&gt;&lt;/i&gt;
+          Home
+        &lt;/mat-list-item&gt;
+        &lt;mat-list-item routerLink&#x3D;&quot;/all&quot; routerLinkActive&#x3D;&quot;activeSideLink&quot;&gt;
+          &lt;i class&#x3D;&quot;fas fa-th allIcon&quot;&gt;&lt;/i&gt;
+          All
+        &lt;/mat-list-item&gt;
+        &lt;mat-list-item routerLink&#x3D;&quot;/today&quot; routerLinkActive&#x3D;&quot;activeSideLink&quot;&gt;
+          &lt;i class&#x3D;&quot;far fa-calendar-check todayIcon&quot;&gt;&lt;/i&gt;
+          Today
+        &lt;/mat-list-item&gt;
+        &lt;mat-list-item routerLink&#x3D;&quot;/week&quot; routerLinkActive&#x3D;&quot;activeSideLink&quot;&gt;
+          &lt;i class&#x3D;&quot;far fa-calendar-alt weekIcon&quot;&gt;&lt;/i&gt;
+          Week
+        &lt;/mat-list-item&gt;
+        &lt;mat-list-item routerLink&#x3D;&quot;/isCompleted&quot; routerLinkActive&#x3D;&quot;activeSideLink&quot;&gt;
+          &lt;i class&#x3D;&quot;far fa-check-circle doneIcon&quot;&gt;&lt;/i&gt;
+          Done
+        &lt;/mat-list-item&gt;
+        &lt;mat-list-item routerLink&#x3D;&quot;/isDeleted&quot; routerLinkActive&#x3D;&quot;activeSideLink&quot;&gt;
+          &lt;i class&#x3D;&quot;far fa-trash-alt deletedIcon&quot;&gt;&lt;/i&gt;
+          Deleted
+        &lt;/mat-list-item&gt;
+        &lt;mat-accordion&gt;
+          &lt;mat-expansion-panel (opened)&#x3D;&quot;panelOpenState &#x3D; true&quot; (closed)&#x3D;&quot;panelOpenState &#x3D; false&quot;&gt;
+            &lt;mat-expansion-panel-header&gt;
+              &lt;mat-panel-title&gt;
+                &lt;i class&#x3D;&quot;fas fa-folder-open groupsIcon&quot;&gt;&lt;/i&gt;
+                Groups
+              &lt;/mat-panel-title&gt;
+            &lt;/mat-expansion-panel-header&gt;
+            &lt;mat-list-item *ngFor&#x3D;&quot;let item of groupsList&quot; [routerLink]&#x3D;&quot;[&#x27;group&#x27;]&quot; [queryParams]&#x3D;&quot;{groupId: item.id}&quot;
+              routerLinkActive&#x3D;&quot;router-link-active&quot; routerLinkActive&#x3D;&quot;activeSideLink&quot;&gt;
+              {{item.name}}
+            &lt;/mat-list-item&gt;
+          &lt;/mat-expansion-panel&gt;
+        &lt;/mat-accordion&gt;
+      &lt;/mat-list&gt;
+    &lt;/div&gt;
+
+  &lt;/mat-sidenav&gt;
+  &lt;mat-sidenav-content&gt;
+    &lt;mat-toolbar&gt;
+      &lt;button (click)&#x3D;&quot;sideMenu.toggle()&quot; mat-icon-button&gt;
+        &lt;mat-icon&gt;menu&lt;/mat-icon&gt;
+      &lt;/button&gt;
+      &lt;strong&gt;{{todoSer.pageTitle$ | async}} Tasks&lt;/strong&gt;
+    &lt;/mat-toolbar&gt;
+    &lt;router-outlet&gt;&lt;/router-outlet&gt;
+  &lt;/mat-sidenav-content&gt;
+&lt;/mat-sidenav-container&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./app.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/* Mat Toolbar */
+mat-toolbar {
+  background-color: #4d708e;
+  color: #fff;
+
+  mat-icon {
+    font-size: 24px;
+  }
+
+  strong {
+    font-size: 16px;
+  }
+}
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 45px;
+}
+
+/* Side Nav */
+mat-sidenav {
+  width: 220px;
+  height: 100vh;
+
+  /* Mat Toolbar */
+  mat-toolbar {
+    background-color: #678cab;
+  }
+
+  /* Side Avatar */
+  .sideAvatar {
+    background-color: #f1fdff;
+    padding: 7px 10px;
+    img {
+      width: 20%;
+    }
+    .avatarName {
+      margin-left: 10px;
+    }
+
+    i {
+      margin-left: 10px;
+    }
+  }
+
+  /* Side Menue */
+  .menue {
+    margin: 10px 0 0 0;
+
+    mat-list {
+      height: 100%;
+    }
+
+    mat-list-item {
+      font-size: 15px;
+      color: #6d6d6d;
+      cursor: pointer;
+      transition: 0.3s;
+      i {
+        margin-right: 10px;
+        margin-left: 30px;
+        color: rgb(180, 180, 180);
+        transition: 0.3s;
+      }
+
+      i.homeIcon {
+        color: #00656a;
+      }
+
+      i.allIcon {
+        color: #97b92f;
+      }
+
+      i.todayIcon {
+        color: #a22e45;
+      }
+
+      i.weekIcon {
+        color: #fdb522;
+      }
+
+      i.doneIcon {
+        color: #0a6a3c;
+      }
+
+      i.deletedIcon {
+        color: #f36523;
+      }
+
+      i.groupIcon {
+        color: #4e534d;
+      }
+    }
+
+    mat-list-item:hover {
+      background-color: #f1fdff;
+      color: #4d708e;
+    }
+
+    .activeSideLink {
+      background-color: #f1fdff;
+      color: #4d708e;
+
+      i {
+        color: #4d708e;
+      }
+    }
+
+    mat-list-item:hover i {
+      color: #4d708e;
+    }
+  }
+
+  mat-accordion {
+    display: block;
+    mat-expansion-panel {
+      background-color: transparent;
+      box-shadow: none !important;
+
+      i {
+        margin-right: 5px;
+        color: #4e534d;
+      }
+    }
+
+    mat-expansion-panel:hover mat-list-item {
+      color: #2d2d2d;
+    }
+
+    mat-expansion-panel-header {
+      mat-panel-title {
+        padding-left: 22px;
+        color: #6d6d6d;
+      }
+    }
+
+    mat-expansion-panel-header:hover {
+      background-color: none !important;
+    }
+
+    mat-list-item {
+      padding-left: 23px;
+      font-size: 13px !important;
+    }
+
+    mat-list-item:hover {
+      background-color: #ddd;
+    }
+
+    mat-list-item:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+/* Mat Side Content */
+mat-sidenav-content {
+  height: 100vh;
+  background: linear-gradient(#6cb3d5, #d0e4e0);
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- Side Menue --><mat-sidenav-container>  <mat-sidenav #sideMenu opened mode="side">    <mat-toolbar></mat-toolbar>    <div class="sideAvatar">      <img src="../../assets/sideAvatar.png" alt="avatart" title="avatar" />      <strong class="avatarName">Moustafa Elkady</strong>      <i class="fas fa-sort-down"></i>    </div>    <div class="menue">      <mat-list>        <mat-list-item routerLink="/taskslist" routerLinkActive="activeSideLink" [routerLinkActiveOptions]="{exact:          true}">          <i class="fas fa-home homeIcon"></i>          Home        </mat-list-item>        <mat-list-item routerLink="/all" routerLinkActive="activeSideLink">          <i class="fas fa-th allIcon"></i>          All        </mat-list-item>        <mat-list-item routerLink="/today" routerLinkActive="activeSideLink">          <i class="far fa-calendar-check todayIcon"></i>          Today        </mat-list-item>        <mat-list-item routerLink="/week" routerLinkActive="activeSideLink">          <i class="far fa-calendar-alt weekIcon"></i>          Week        </mat-list-item>        <mat-list-item routerLink="/isCompleted" routerLinkActive="activeSideLink">          <i class="far fa-check-circle doneIcon"></i>          Done        </mat-list-item>        <mat-list-item routerLink="/isDeleted" routerLinkActive="activeSideLink">          <i class="far fa-trash-alt deletedIcon"></i>          Deleted        </mat-list-item>        <mat-accordion>          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">            <mat-expansion-panel-header>              <mat-panel-title>                <i class="fas fa-folder-open groupsIcon"></i>                Groups              </mat-panel-title>            </mat-expansion-panel-header>            <mat-list-item *ngFor="let item of groupsList" [routerLink]="[\'group\']" [queryParams]="{groupId: item.id}"              routerLinkActive="router-link-active" routerLinkActive="activeSideLink">              {{item.name}}            </mat-list-item>          </mat-expansion-panel>        </mat-accordion>      </mat-list>    </div>  </mat-sidenav>  <mat-sidenav-content>    <mat-toolbar>      <button (click)="sideMenu.toggle()" mat-icon-button>        <mat-icon>menu</mat-icon>      </button>      <strong>{{todoSer.pageTitle$ | async}} Tasks</strong>    </mat-toolbar>    <router-outlet></router-outlet>  </mat-sidenav-content></mat-sidenav-container></div>'
+    var COMPONENTS = [{'name': 'AddNewTaskComponent', 'selector': 'app-add-new-task'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'TaskDetailsComponent', 'selector': 'app-task-details'},{'name': 'TasksListComponent', 'selector': 'app-tasks-list'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

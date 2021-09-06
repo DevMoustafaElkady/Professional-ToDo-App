@@ -1,0 +1,49 @@
+<ng-container *ngIf="item?.title; else elseTemplate">
+  <div class="taskDetails">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-8">
+          <mat-card>
+            <!-- Main Task Title -->
+            <h2><i class="fas fa-tasks"></i> {{item.title}} / Details</h2>
+            <ul class="list-group">
+              <!-- Task Title -->
+              <li class="list-group-item">
+                <strong> <i class="far fa-edit"></i> Title</strong>
+                <span>{{item.title}}</span>
+              </li>
+              <!-- Task Discription -->
+              <li class="list-group-item">
+                <strong><i class="fab fa-stack-exchange"></i> Discription</strong>
+                <span>{{item.description}}</span>
+              </li>
+              <!-- Task Periority -->
+              <li class="list-group-item">
+                <strong><i class="fas fa-arrow-circle-up"></i> Priority</strong>
+                <span>{{item?.priority == 1 ? 'One' : 'Two'}}</span>
+              </li>
+              <!-- Task Date -->
+              <li class="list-group-item">
+                <strong><i class="far fa-calendar-check"></i> Date</strong>
+                <span>{{item.date | date}}</span>
+              </li>
+              <!-- Task Group -->
+              <li class="list-group-item" *ngIf="item.group">
+                <strong><i class="far fa-folder-open"></i> Group</strong>
+                <span>{{groupEnumName[getKeyByvalue(groupEnum,item.group)]}}</span>
+              </li>
+            </ul>
+            <!-- Back To Home Button -->
+            <div class="backButton text-center">
+              <button routerLink="" mat-raised-button><i class="fas fa-undo"></i> Back To Home</button>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ng-container>
+<ng-template #elseTemplate>
+  <h1>No Data Found !</h1>
+</ng-template>

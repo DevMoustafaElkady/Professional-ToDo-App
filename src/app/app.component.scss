@@ -1,0 +1,159 @@
+/* Mat Toolbar */
+mat-toolbar {
+  background-color: #4d708e;
+  color: #fff;
+
+  mat-icon {
+    font-size: 24px;
+  }
+
+  strong {
+    font-size: 16px;
+  }
+}
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 45px;
+}
+
+/* Side Nav */
+mat-sidenav {
+  width: 220px;
+  height: 100vh;
+
+  /* Mat Toolbar */
+  mat-toolbar {
+    background-color: #678cab;
+  }
+
+  /* Side Avatar */
+  .sideAvatar {
+    background-color: #f1fdff;
+    padding: 7px 10px;
+    img {
+      width: 20%;
+    }
+    .avatarName {
+      margin-left: 10px;
+    }
+
+    i {
+      margin-left: 10px;
+    }
+  }
+
+  /* Side Menue */
+  .menue {
+    margin: 10px 0 0 0;
+
+    mat-list {
+      height: 100%;
+    }
+
+    mat-list-item {
+      font-size: 15px;
+      color: #6d6d6d;
+      cursor: pointer;
+      transition: 0.3s;
+      i {
+        margin-right: 10px;
+        margin-left: 30px;
+        color: rgb(180, 180, 180);
+        transition: 0.3s;
+      }
+
+      i.homeIcon {
+        color: #00656a;
+      }
+
+      i.allIcon {
+        color: #97b92f;
+      }
+
+      i.todayIcon {
+        color: #a22e45;
+      }
+
+      i.weekIcon {
+        color: #fdb522;
+      }
+
+      i.doneIcon {
+        color: #0a6a3c;
+      }
+
+      i.deletedIcon {
+        color: #f36523;
+      }
+
+      i.groupIcon {
+        color: #4e534d;
+      }
+    }
+
+    mat-list-item:hover {
+      background-color: #f1fdff;
+      color: #4d708e;
+    }
+
+    .activeSideLink {
+      background-color: #f1fdff;
+      color: #4d708e;
+
+      i {
+        color: #4d708e;
+      }
+    }
+
+    mat-list-item:hover i {
+      color: #4d708e;
+    }
+  }
+
+  mat-accordion {
+    display: block;
+    mat-expansion-panel {
+      background-color: transparent;
+      box-shadow: none !important;
+
+      i {
+        margin-right: 5px;
+        color: #4e534d;
+      }
+    }
+
+    mat-expansion-panel:hover mat-list-item {
+      color: #2d2d2d;
+    }
+
+    mat-expansion-panel-header {
+      mat-panel-title {
+        padding-left: 22px;
+        color: #6d6d6d;
+      }
+    }
+
+    mat-expansion-panel-header:hover {
+      background-color: none !important;
+    }
+
+    mat-list-item {
+      padding-left: 23px;
+      font-size: 13px !important;
+    }
+
+    mat-list-item:hover {
+      background-color: #ddd;
+    }
+
+    mat-list-item:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+/* Mat Side Content */
+mat-sidenav-content {
+  height: 100vh;
+  background: linear-gradient(#6cb3d5, #d0e4e0);
+}

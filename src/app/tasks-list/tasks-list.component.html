@@ -1,0 +1,104 @@
+<!-- Add New Button -->
+<div class="container">
+  <div class="addNewUp">
+    <button mat-button class="addNew" routerLink="/addtask">
+      <i class="fas fa-plus"></i>
+      New Task
+    </button>
+  </div>
+
+  <!-- Filter Section -->
+  <div class="filterSection">
+    <h3>Filter By</h3>
+    <div class="filterForm">
+      <form action="">
+        <div class="row justify-content-lg-center">
+          <!-- By Data -->
+          <div class="col-lg-3">
+            <mat-form-field appearance="fill">
+              <mat-label>Date</mat-label>
+              <input [(ngModel)]="todoFilter.date" (dateChange)="search()" matInput [matDatepicker]="picker"
+                [ngModelOptions]="{standalone: true}">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+          </div>
+          <!-- By Title -->
+          <div class="col-lg-3">
+            <mat-form-field appearance="fill">
+              <mat-label>Title</mat-label>
+              <input [(ngModel)]="todoFilter.search" (keyup)="search()" [ngModelOptions]="{standalone: true}" matInput>
+            </mat-form-field>
+          </div>
+          <!-- By Group -->
+          <div class="col-lg-3">
+            <mat-form-field appearance="fill">
+              <mat-label>Group</mat-label>
+              <mat-select [(ngModel)]="todoFilter.group" (selectionChange)="search()"
+                [ngModelOptions]="{standalone: true}">
+                <mat-option [value]="+item.id" *ngFor="let item of groupsList">{{item.name}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Task Groups -->
+  <div class="taskGroups">
+
+    <!-- Controling Buttons -->
+    <div class="controlButtons">
+      <!-- Delete Button -->
+      <button mat-raised-button [disabled]="!selectedItems.length" [class.disabledButton]="!selectedItems.length"
+        (click)="todosDelete()" class="deleteSelected">
+        <i class="far fa-trash-alt"></i>
+        Delete Selected
+      </button>
+      <!-- Done Button -->
+      <button [disabled]="!selectedItems.length" [class.disabledButton]="!selectedItems.length" (click)="todosDone()"
+        mat-raised-button class="doneSelected">
+        <i class="fas fa-check"></i>
+        Done
+      </button>
+    </div>
+
+    <!-- Groups -->
+    <ng-container *ngFor="let itemX of todoSer.todos$ | async | keyvalue let i = index">
+      <div class="group firstGroup" *ngIf="getArrValue(itemX.value)?.length">
+        <span class="groupName"><i class="fas fa-folder"></i> {{groupEnumName[itemX.key]}}</span>
+        <ul>
+          <ng-container *ngFor="let item of  getArrValue(itemX.value)">
+            <li>
+              <div class="row">
+                <div class="checkBox col-lg-6">
+                  <section class="example-section">
+                    <mat-checkbox class="example-margin" [class.completedItem]="item?.isCompleted"
+                      [class.deletedItem]="item?.isDeleted" (change)="selectItem($event, item,i)">{{item.title }}
+                    </mat-checkbox>
+                  </section>
+                </div>
+                <div class="controls col-lg-6 text-end">
+                  <button routerLink="taskdetails" routerLink="{{'/taskdetails/'+ item.title}}" mat-mini-fab
+                    class="info" title="Task Info">
+                    <i class="fas fa-info"></i>
+                  </button>
+                  <button mat-mini-fab class="del" (click)="todoSer.patchField([item],'isDeleted',true,todoFilter)"
+                    title="Delete Task">
+                    <i class="far fa-trash-alt"></i>
+                  </button>
+                  <button mat-mini-fab class="done" (click)="todoSer.patchField([item],'isCompleted',true,todoFilter)"
+                    title="Task Done">
+                    <i class="fas fa-check"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="addTask">
+    <h2><i class="fas fa-plus"></i> Add New Task</h2>
+    <!-- Form  -->
+    <form #form="ngForm" (ngSubmit)="submitForm(form)">
+      <div class="row  justify-content-lg-center">
+        <div class="col-lg-10">
+          <!-- Add Title -->
+          <div class="col-lg-12">
+            <mat-form-field appearance="fill">
+              <mat-label>Title</mat-label>
+              <input matInput type="text" name="title" #title="ngModel" ngModel required>
+            </mat-form-field>
+          </div>
+          <!-- Add Description -->
+          <div class="col-lg-12">
+            <mat-form-field appearance="fill">
+              <mat-label>Description</mat-label>
+              <textarea matInput required name="description" #description="ngModel" ngModel></textarea>
+            </mat-form-field>
+          </div>
+          <!-- Add Periority -->
+          <div class="col-lg-12">
+            <mat-radio-group aria-label="Select an option" name="priority" #priority="ngModel" ngModel>
+              <strong>priority</strong>
+              <mat-radio-button value="1" required>One</mat-radio-button>
+              <mat-radio-button value="2" required>Two</mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <!-- Add Date -->
+          <div class="col-lg-12">
+            <mat-form-field appearance="fill">
+              <mat-label>Date</mat-label>
+              <input matInput [matDatepicker]="picker" required name="date" #date="ngModel" ngModel>
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <!-- Add Group -->
+          <div class="col-lg-12">
+            <mat-form-field appearance="fill">
+              <mat-label>Group</mat-label>
+              <mat-select required name="group" #group="ngModel" ngModel>
+                <mat-option [value]="item.id" *ngFor="let item of groupsList">{{item.name}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <!-- Buttons Tree -->
+          <div class="buttonsTree">
+            <div class="row justify-content-md-center">
+              <div class="col-lg-3">
+                <!-- Add Button -->
+                <button type="submit" class="add" [disabled]="form.invalid" [class.disabledButton]="form.invalid"
+                  mat-raised-button><i class="fas fa-plus"></i>
+                  Add</button>
+              </div>
+              <div class="col-lg-3">
+                <!-- Clear Button -->
+                <button class="clear" type="button" (click)="form.reset()" mat-raised-button><i
+                    class="fas fa-broom"></i>
+                  Clear</button>
+              </div>
+              <div class="col-lg-3">
+                <!-- Back Button -->
+                <button routerLink="" class="back" type="button" mat-raised-button><i class="fas fa-undo"></i>
+                  Back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

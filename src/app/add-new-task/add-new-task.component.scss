@@ -1,0 +1,69 @@
+/* Add Task Section */
+.addTask {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 30px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  mat-radio-group {
+    margin: 20px 0;
+    display: block;
+
+    strong {
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-right: 20px;
+      color: #787878;
+    }
+
+    mat-radio-button {
+      margin-right: 30px;
+    }
+  }
+
+  /* Ng Deep */
+  ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle,
+  .mat-radio-button.mat-accent
+    .mat-radio-ripple
+    .mat-ripple-element:not(.mat-radio-persistent-ripple),
+  .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+  .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color: #4d708e;
+  }
+  ::ng-deep
+    .mat-radio-button.mat-accent.mat-radio-checked
+    .mat-radio-outer-circle {
+    border-color: #4d708e;
+  }
+
+  .buttonsTree {
+    margin-top: 30px;
+
+    button {
+      color: #fff;
+    }
+
+    .add {
+      background-color: #72e097;
+    }
+
+    .clear {
+      background-color: #ff9c9c;
+    }
+
+    .back {
+      background-color: #2d2d2d;
+    }
+
+    .disabledButton {
+      background: #787878 !important;
+    }
+  }
+}
